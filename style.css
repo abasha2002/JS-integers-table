@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;
+    height: 90%;
+    max-height: 900px;
+}
+
+td {
+    border: 1px solid black;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.even:hover{
+    background-color: lightgreen;
+}
+.odd:hover{
+    background-color: red;
+}
+.odd.active{
+    background-color: red;
+}
+.even.active{
+    background-color: lightgreen;
+}
